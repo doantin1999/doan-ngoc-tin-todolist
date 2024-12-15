@@ -1,0 +1,11 @@
+.main-layout-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full screen height */
+}
+
+.main-layout-container_content {
+  display: flex;
+  flex: 1; /* Grow to fill available space */
+  overflow: auto;
+}

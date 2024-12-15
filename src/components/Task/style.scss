@@ -1,0 +1,39 @@
+.task-container {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  padding: 10px;
+}
+
+.task-container_divider {
+  border-bottom: 1px solid black;
+}
+
+.task-container_title,
+.task-container_status,
+.task-container_des-title {
+  font-weight: 700;
+}
+.task-container_title {
+  font-weight: 700;
+  cursor: pointer;
+  &:hover {
+    color: blue;
+  }
+}
+
+.task-container_status {
+  color: green;
+}
+
+.task-container_des-content {
+  height: 56px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
